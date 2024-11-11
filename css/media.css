@@ -1,0 +1,164 @@
+@media  screen and (min-width:1200px) {
+   .gallery .container{
+        min-height: 100vh;
+    }
+   
+}
+@media screen and (max-width:992px){
+    .home .container1{
+        justify-content: center;
+        flex-direction: column-reverse;
+
+    }
+    .home-content,.home-image{
+        width: 100%; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .btn-group{
+        width: fit-content;
+        text-align: center;
+    }
+    .btn-group .book{
+        border-radius: 50px;
+    }
+    .home-content h2{
+        font-size: 50px;
+    }
+ 
+}
+@media screen and (max-width:992px){
+    .chefs-content{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .meals{
+        columns: 2;
+    }
+
+    .input-group input{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    #subject,.contact textarea{
+        margin-left: 0;
+    }
+    .contact form{
+        width: 100%;
+    }
+    .footer .content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .about,.details,.subscriptions{
+        width: 100%;   
+        margin-bottom: 20px;
+    }
+    
+    .subscription-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subscription-group button{
+        width: 50%;
+        margin-top: 10px;
+    }
+    .subscription-group input{
+        width: 100%;
+        padding: 15px 15px;
+    }
+
+}
+@media screen and (max-width:728px){
+    .chefs-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .meals{
+        columns: 1;
+    }
+    .quick-links ul{
+        columns: 1 ;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info-data{
+        width: 100%;
+        gap: 0;
+        font-size: 20px;
+    }
+    .contact-info{
+        width: 100%;
+        
+    }
+     
+}
+@media screen and (max-width:1000px) {
+    .bar-icon{
+        display: block;
+    }
+}
+@media screen and (max-width:582px) {
+    .navbar-list ul li{
+        padding-right: 5px;
+   }
+}
+@media screen and (max-width:1200px) {
+    .bar-icon{
+        display: block;
+    } 
+     
+    body:has(.navlinks:target) .navbar{
+       height:100vh;
+       background-color: #fff5;
+        
+    }
+    body:has(.navlinks:target) .navbar .container .logo{
+         text-align: start;
+         margin-top: -100%;
+    }
+    .navbar .darkmode-type{
+        margin-left:auto ;
+        margin-right: 10px;
+    }
+    .navbar-list ul{
+        display: flex;
+        width:350px;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        gap:0; 
+        transform: translateX(100%);
+    } 
+    body:has(.navlinks:target) .navbar-list ul{
+        transform: translateX(0);
+    } 
+    .navbar-list ul li{
+        padding: 10px 20px 10px;
+    }
+    .navbar-list ul .home-list{
+        padding-top:30px;
+    }     
+    .navlinks .xmark{
+        display: block;
+        font-size: 24px;
+        padding-block: 10px;
+        text-align: right;
+    }
+}
